@@ -142,6 +142,7 @@
     <div class="container">
         <table>
             <thead>
+				<tr><a id="inputAnalysisLink" href="http://localhost:8501/?file_url=C:/Users/martinez/Documents/GitHub/ci-component/data.csv" target="_blank">Input Analysis</a></tr>
                 <tr>
                     <th>Description</th>
                     <th>Features</th>
@@ -179,16 +180,26 @@
 			if (fileInput.files.length > 0) {
 				const selectedFile = fileInput.files[0];
 				const reader = new FileReader();
-				reader.readAsText(selectedFile, 'utf-8');
+				reader.readAsText(selectedFile, 'UTF-8');
 
 				reader.onload = function (event) {
 					const csvData2 = event.target.result;
 					parseCSV(csvData2);
+					
+					alert (fileInput.files[0].path)
+					// Update the hyperlink with the new file path
+					updateHyperlink(selectedFile.name);
 				};
 			} else {
 				alert('Please select a CSV file to load.');
 			}
 		});
+
+		function updateHyperlink(file) {
+			const linkElement = document.getElementById('inputAnalysisLink');
+			const filePath = encodeURIComponent(file); // Encoding the file path
+			linkElement.href = `http://localhost:8501/?file_url=C:/Users/martinez/Documents/GitHub/ci-component/${filePath}`;
+		}
 		
 		
 		function parseCSV(csv) {
