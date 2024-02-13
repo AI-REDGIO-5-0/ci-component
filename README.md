@@ -32,7 +32,20 @@ This project consists of a web-based application designed to demonstrate a colla
 - A modern web browser.
 - A CSV file for data upload.
 
+
+## Citation
+For academic use, please refer to our work:
+
+```
+@incollection{hoch2023multi,
+  title={Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0},
+  author={Hoch, Thomas and Martinez-Gil, Jorge and Pichler, Mario and Silvina, Agastya and Heinzl, Bernhard and Moser, Bernhard and Eleftheriou, Dimitris and Estrada-Lugo, Hector Diego and Leva, Maria Chiara},
+  booktitle={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
+  pages={407--421},
+  year={2023},
+  publisher={Springer}
+}
+```
+
 ## Acknowledgement
 This work is performed in the context of the AI REDGIO 5.0 “Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs” EU Innovation Action Project under Grant Agreement No 101092069
-
-
