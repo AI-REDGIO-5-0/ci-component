@@ -58,7 +58,6 @@ For academic use, please refer to our work:
 	doi="10.1007/978-3-031-46452-2_23",
 	url="https://doi.org/10.1007/978-3-031-46452-2_23"
 }
-}
 ```
 
 ## Acknowledgement
