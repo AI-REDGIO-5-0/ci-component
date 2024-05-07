@@ -37,13 +37,27 @@ This project consists of a web-based application designed to demonstrate a colla
 For academic use, please refer to our work:
 
 ```
-@incollection{hoch2023multi,
-  title={Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0},
-  author={Hoch, Thomas and Martinez-Gil, Jorge and Pichler, Mario and Silvina, Agastya and Heinzl, Bernhard and Moser, Bernhard and Eleftheriou, Dimitris and Estrada-Lugo, Hector Diego and Leva, Maria Chiara},
-  booktitle={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
-  pages={407--421},
-  year={2023},
-  publisher={Springer}
+@Inbook{Hoch2024,
+	author="Hoch, Thomas
+	and Martinez-Gil, Jorge
+	and Pichler, Mario
+	and Silvina, Agastya
+	and Heinzl, Bernhard
+	and Moser, Bernhard
+	and Eleftheriou, Dimitris
+	and Estrada-Lugo, Hector Diego
+	and Leva, Maria Chiara",
+	editor="Soldatos, John",
+	title="Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0",
+	bookTitle="Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI",
+	year="2024",
+	publisher="Springer Nature Switzerland",
+	address="Cham",
+	pages="407--421",
+	isbn="978-3-031-46452-2",
+	doi="10.1007/978-3-031-46452-2_23",
+	url="https://doi.org/10.1007/978-3-031-46452-2_23"
+}
 }
 ```
 
