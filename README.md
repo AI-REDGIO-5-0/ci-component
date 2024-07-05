@@ -3,7 +3,7 @@
 ## Overview
 This project consists of a web-based application designed to demonstrate a collaborative intelligence component. It's an industrial pilot that showcases the functionalities of data visualization and manipulation using HTML, CSS, and JavaScript.
 
-![Screenshoot](image.bmp)
+![Screenshoot](image.png)
 
 ## Features
 - Display of data in a table format.
