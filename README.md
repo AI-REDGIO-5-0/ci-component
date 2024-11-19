@@ -37,11 +37,11 @@ This project consists of a web-based application designed to demonstrate a colla
 For academic use, please refer to our work:
 
 ```
-@article{martinez2023examining,
-  title={Examining the Adoption of Knowledge Graphs in the Manufacturing Industry: A Comprehensive Review},
-  author={Martinez-Gil, Jorge and Hoch, Thomas and Pichler, Mario and Heinzl, Bernhard and Moser, Bernhard and Kurniawan, Kabul and Kiesling, Elmar and Krause, Franz},
-  journal={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
-  pages={55--70},
+@incollection{hoch2023multi,
+  title={Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0},
+  author={Hoch, Thomas and Martinez-Gil, Jorge and Pichler, Mario and Silvina, Agastya and Heinzl, Bernhard and Moser, Bernhard and Eleftheriou, Dimitris and Estrada-Lugo, Hector Diego and Leva, Maria Chiara},
+  booktitle={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
+  pages={407--421},
   year={2023},
   publisher={Springer Nature Switzerland Cham}
 }
