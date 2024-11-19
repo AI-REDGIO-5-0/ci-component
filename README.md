@@ -36,29 +36,14 @@ This project consists of a web-based application designed to demonstrate a colla
 ## Citation
 For academic use, please refer to our work:
 
-```
-@Inbook{Hoch2024,
-	author="Hoch, Thomas
-	and Martinez-Gil, Jorge
-	and Pichler, Mario
-	and Silvina, Agastya
-	and Heinzl, Bernhard
-	and Moser, Bernhard
-	and Eleftheriou, Dimitris
-	and Estrada-Lugo, Hector Diego
-	and Leva, Maria Chiara",
-	editor="Soldatos, John",
-	title="Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0",
-	bookTitle="Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI",
-	year="2024",
-	publisher="Springer Nature Switzerland",
-	address="Cham",
-	pages="407--421",
-	isbn="978-3-031-46452-2",
-	doi="10.1007/978-3-031-46452-2_23",
-	url="https://doi.org/10.1007/978-3-031-46452-2_23"
+@article{martinez2023examining,
+  title={Examining the Adoption of Knowledge Graphs in the Manufacturing Industry: A Comprehensive Review},
+  author={Martinez-Gil, Jorge and Hoch, Thomas and Pichler, Mario and Heinzl, Bernhard and Moser, Bernhard and Kurniawan, Kabul and Kiesling, Elmar and Krause, Franz},
+  journal={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
+  pages={55--70},
+  year={2023},
+  publisher={Springer Nature Switzerland Cham}
 }
-```
 
 ## Acknowledgement
 This work is performed in the context of the AI REDGIO 5.0 “Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs” EU Innovation Action Project under Grant Agreement No 101092069
