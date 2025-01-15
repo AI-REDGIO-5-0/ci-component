@@ -182,12 +182,13 @@
             <tbody id="logTable">
             </tbody>
         </table>
-        <div class="button-container">
-            <input type="file" id="csvFileInput" accept=".csv">
-            <button id="loadCsvButton" class="custom-button">Send CSV</button>
-            <button id="exportNonOkButton" class="custom-button">Export Non-OK Rows</button>
+		<div class="button-container">
+			<input type="file" id="csvFileInput" accept=".csv">
+			<button id="loadCsvButton" class="custom-button">Send CSV</button>
+			<button id="exportNonOkButton" class="custom-button">Export Non-OK Rows</button>
+			<button id="genAIButton" class="custom-button">GenAI</button> <!-- New Button -->
 			<button id="recalibrateButton" class="custom-button">Recalibrate Model</button>
-        </div>
+		</div>
     </div>
     <div id="charts">
         <div id="temperatureChart"></div>
@@ -252,6 +253,48 @@
 			// Your logic for recalibrating the model goes here
 			alert('Recalibrating the model...'); // Placeholder action
 			// Add your recalibration code or functionality here
+		}
+		
+		// Event listener for GenAI button
+		document.getElementById('genAIButton').addEventListener('click', applyGenAI);
+
+		function applyGenAI() {
+			const rows = document.querySelectorAll('#logTable tr');
+
+			rows.forEach(row => {
+				const targetInput = row.querySelector('td:nth-child(3) input'); // Target column
+				const predictedCell = row.querySelector('td:nth-child(4)'); // Predicted column
+				const statusCell = row.querySelector('td:nth-child(5)'); // Status column
+
+				if (targetInput && predictedCell) {
+					const target = parseFloat(targetInput.value);
+					const predicted = parseFloat(predictedCell.textContent);
+
+					if (!isNaN(target) && !isNaN(predicted)) {
+						const difference = Math.abs(predicted - target);
+
+						// Update the row class based on the difference
+						if (difference < 10) {
+							row.className = 'ok'; // Mark as OK (Green)
+						} else {
+							row.className = 'non-ok'; // Mark as Non-OK (Red)
+						}
+
+						// Update the radio button status accordingly
+						const okButton = statusCell.querySelector('input[value="ok"]');
+						const nonOkButton = statusCell.querySelector('input[value="non-ok"]');
+						if (row.classList.contains('ok') && okButton) {
+							okButton.checked = true;
+						}
+						if (row.classList.contains('non-ok') && nonOkButton) {
+							nonOkButton.checked = true;
+						}
+					}
+				}
+			});
+
+			// Update the bar chart with the new counts
+			updateBarChart();
 		}
 
         function createTrace(name, color) {
@@ -457,7 +500,8 @@
 				const input = document.createElement('input');
 				input.type = 'text';
 				input.value = content;
-				input.classList.add('target-input'); // Add class for styling
+				input.classList.add('target-input');
+				input.readOnly = true; // Initially, make it read-only
 				cell.appendChild(input);
 			} else {
 				cell.textContent = content;
@@ -477,12 +521,30 @@
             return cell;
         }
 
-        function createStatusCell(index) {
-            const cell = document.createElement('td');
-            cell.appendChild(createRadioButton('ok', index, 'OK'));
-            cell.appendChild(createRadioButton('non-ok', index, 'Non-OK'));
-            return cell;
-        }
+		function createStatusCell(index) {
+			const cell = document.createElement('td');
+			const okButton = createRadioButton('ok', index, 'OK');
+			const nonOkButton = createRadioButton('non-ok', index, 'Non-OK');
+
+			// Add an event listener to update the editable status of the target input based on the row's status
+			const updateEditableStatus = () => {
+				const row = cell.closest('tr');
+				const targetInput = row.querySelector('td:nth-child(3) input');
+				if (row.classList.contains('non-ok')) {
+					targetInput.readOnly = false; // Allow editing when row is Non-OK
+				} else {
+					targetInput.readOnly = true; // Disable editing when row is OK
+				}
+			};
+
+			// Attach event listeners to update the editable status when the radio buttons are clicked
+			okButton.querySelector('input').addEventListener('change', updateEditableStatus);
+			nonOkButton.querySelector('input').addEventListener('change', updateEditableStatus);
+
+			cell.appendChild(okButton);
+			cell.appendChild(nonOkButton);
+			return cell;
+		}
 
         function createRadioButton(value, index, label) {
             const radio = document.createElement('input');
