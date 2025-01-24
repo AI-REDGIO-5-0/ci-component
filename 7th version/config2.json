@@ -1,9 +1,0 @@
-{
-    "host": "0c9a56687473428b8f490dd7a1c6cd30.s1.eu.hivemq.cloud",
-    "port": 8884,
-    "username": "aireg-client1",
-    "password": "WaitressSmileWand@93",
-    "clientId": "AIREG-client1",
-    "inputTopic": "input",
-    "outputTopic": "output"
-}
