@@ -1,0 +1,16 @@
+{
+    "brokerURL": "wss://broker.hivemq.com:8884/mqtt",
+    "inputTopic": "input",
+    "outputTopic": "output",
+    "inputs": [
+        {"name": "000", "value": ""},
+        {"name": "001", "value": ""},
+        {"name": "002", "value": ""},
+        {"name": "003", "value": ""},
+        {"name": "004", "value": ""},
+        {"name": "005", "value": ""},
+    ],
+    "outputs": [
+        {"name": "Target", "value": ""}
+    ]
+}
