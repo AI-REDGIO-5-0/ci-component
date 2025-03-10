@@ -89,4 +89,3 @@ If you use this work in academic research, please cite:
 ## Acknowledgment
 This work is performed within the **AI REDGIO 5.0** project:  
 *"Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs"* under **EU Grant Agreement No. 101092069**.
-```
