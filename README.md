@@ -1,40 +1,79 @@
 # Collaborative Intelligence Component
 
 ## Overview
-This project consists of a web-based application designed to demonstrate a collaborative intelligence component. It's an industrial pilot that showcases the functionalities of data visualization and manipulation using HTML, CSS, and JavaScript.
+The **Collaborative Intelligence Component** is a web-based application designed to demonstrate an AI-assisted decision-making system at the **Edge**. It integrates human and machine intelligence to curate model results collaboratively and provides seamless recalibration of the AI model with a single click. 
 
-![Screenshoot](image.png)
+This industrial demonstrator showcases data visualization, real-time interaction, and MQTT-based communication for industrial pilots.
+
+![Screenshot](image.png)
 
 ## Features
-- Display of data in a table format.
-- Data loading from a CSV file.
-- Dynamic interaction with data (e.g., filtering and status updating).
-- Custom CSS styling for a pleasant user interface.
-- Use of Google Fonts for typography.
-- Interactive chart for data visualization.
+- **Real-Time Data Processing**: Integrates with MQTT to receive and process live data.
+- **Dynamic Table Interface**: Displays AI predictions alongside human adjustments.
+- **AI Explanation Generation**: Uses GenAI to provide reasoning for AI predictions.
+- **Automated Model Recalibration**: Enables model adjustments based on curated results.
+- **CSV File Handling**: Supports data import and export for analysis.
+- **Interactive Charts**: Visualizes AI predictions against actual values.
+- **Status Monitoring**: Provides insights into AI accuracy through live charts.
 
-## Structure
-- **HTML**: The HTML file contains the basic structure of the web page, including headers, a table for displaying data, and a section for charts.
-- **CSS**: The CSS within the `<style>` tag in the HTML head provides custom styling for the web page, including fonts, colors, and layout designs.
-- **JavaScript**: The script at the end of the body handles data loading, parsing, and dynamic updating of the table and chart.
+## System Architecture
+The system consists of:
+- **Frontend**: A web interface built with HTML, CSS, and JavaScript.
+- **Backend Integration**: Communicates with an MQTT broker to send and receive messages.
+- **GenAI API**: Connects to Chatbase for AI-generated explanations.
+- **Data Visualization**: Uses Plotly.js for dynamic chart rendering.
 
-## Usage
-1. **Viewing the Page**: Open the HTML file in a web browser to view the interface.
-2. **Loading Data**: Click on the 'Load CSV' button to upload and display data from a CSV file.
-3. **Interacting with Data**: Use radio buttons to change the score types and interact with the data in the table.
-4. **Printing Non-OK Rows**: Click on 'Print Non-OK Rows to File' to save rows with a non-OK status to a file.
+## Usage Guide
+1. **Open the Interface**  
+   Open `index.html` in a modern web browser.
+   
+2. **Load Configuration**  
+   - Click **"Load Config"** and upload a `.json` configuration file.
+   - The system validates and auto-connects to the MQTT broker.
+
+3. **Connect to Broker**  
+   - Click **"Connect to Broker"** to establish communication with the MQTT server.
+   - Real-time data will be displayed in the table.
+
+4. **Analyze Data**  
+   - View AI predictions vs. actual target values.
+   - Modify target values if necessary.
+   - AI explanations are automatically generated.
+
+5. **Recalibrate Model**  
+   - Click **"Recalibrate Model"** to adjust the AI model based on user input.
+
+6. **Export Data**  
+   - Click **"Export Non-OK Rows"** to save problematic cases in JSON format.
+
+## Configuration File (Example)
+To connect to an MQTT broker, create a `config.json` file:
+
+```json
+{
+    "brokerURL": "wss://broker.hivemq.com:8000/mqtt",
+    "inputTopic": "ai/input",
+    "outputTopic": "ai/output",
+    "inputs": [
+        {"name": "Feature1"},
+        {"name": "Feature2"},
+        {"name": "Feature3"}
+    ]
+}
+```
 
 ## Customization
-- **Styling**: Modify the CSS in the `<style>` tag to customize the look and feel of the web page.
-- **Data Handling**: Adjust the JavaScript functions to change how data is loaded, parsed, and displayed.
+- **Styling**: Modify the CSS in the `<style>` section of the HTML file.
+- **Feature Expansion**: Extend JavaScript functions to support new AI models.
+- **Integration**: Connect to different MQTT brokers or APIs.
 
-## Requirements
-- A modern web browser.
-- A CSV file for data upload.
-
+## System Requirements
+- A modern web browser (Chrome, Firefox, Edge, or Safari).
+- An MQTT broker (e.g., HiveMQ, Mosquitto).
+- A CSV file for data import.
 
 ## Citation
-For academic use, please refer to our work:
+If you use this work in academic research, please cite:
 
 ```
 @incollection{hoch2023multi,
@@ -47,5 +86,7 @@ For academic use, please refer to our work:
 }
 ```
 
-## Acknowledgement
-This work is performed in the context of the AI REDGIO 5.0 “Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs” EU Innovation Action Project under Grant Agreement No 101092069
+## Acknowledgment
+This work is performed within the **AI REDGIO 5.0** project:  
+*"Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs"* under **EU Grant Agreement No. 101092069**.
+```
