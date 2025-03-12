@@ -72,20 +72,6 @@ To connect to an MQTT broker, create a `config.json` file:
 - An MQTT broker (e.g., HiveMQ, Mosquitto).
 - A CSV file for data import.
 
-## Citation
-If you use this work in academic research, please cite:
-
-```
-@incollection{hoch2023multi,
-  title={Multi-Stakeholder Perspective on Human-AI Collaboration in Industry 5.0},
-  author={Hoch, Thomas and Martinez-Gil, Jorge and Pichler, Mario and Silvina, Agastya and Heinzl, Bernhard and Moser, Bernhard and Eleftheriou, Dimitris and Estrada-Lugo, Hector Diego and Leva, Maria Chiara},
-  booktitle={Artificial Intelligence in Manufacturing: Enabling Intelligent, Flexible and Cost-Effective Production Through AI},
-  pages={407--421},
-  year={2023},
-  publisher={Springer Nature Switzerland Cham}
-}
-```
-
 ## Acknowledgment
 This work is performed within the **AI REDGIO 5.0** project:  
 *"Regions and (E)DIHs alliance for AI-at-the-Edge adoption by European Industry 5.0 Manufacturing SMEs"* under **EU Grant Agreement No. 101092069**.
