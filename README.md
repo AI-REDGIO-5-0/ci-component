@@ -1,10 +1,10 @@
 # Collaborative Intelligence Component
 
-The **Collaborative Intelligence Component** is a web-based application designed to demonstrate an AI-assisted decision-making system at the **Edge**. It integrates human and machine intelligence to curate model results collaboratively and provides seamless recalibration of the AI model with a single click. The tool can be used to generate new training data when training data is scarce. The advantage is that this new data is generated automatically (an LLM generates it) based on positive and negative cases manually curated by domain experts.
+The **Collaborative Intelligence Component** is a web-based application designed to demonstrate an AI-assisted decision-making system at the **Edge**. It integrates **human and machine intelligence** to curate model results collaboratively and provides seamless recalibration of AI models hosted at the edge with a single click. The tool can also automatically generate additional training data using an LLM, based on expert-curated positive and negative examples what is useful when original data is limited.
 
-**Watch our new video**
+**Watch our new video in YouTube**
 
-[![Watch the video](https://img.youtube.com/vi/AR8F8U-QXhM/hqdefault.jpg)](https://www.youtube.com/watch?v=AR8F8U-QXhM)
+[https://www.youtube.com/watch?v=AR8F8U-QXhM](https://www.youtube.com/watch?v=AR8F8U-QXhM)
 
 ## Overview
 
