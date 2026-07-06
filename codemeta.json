@@ -1,0 +1,99 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "ci-component",
+  "name": "Collaborative Intelligence Component (CI-Component)",
+  "description": "A lightweight, web-based implementation of an agentic framework for Industry 5.0. It enables Human-in-the-Loop (HITL) decision making at the Edge, integrating Large Language Models for explainable data curation and one-click recalibration of Edge AI models over MQTT telemetry. Official implementation of the PRO-VE 2025 Best Paper Award-winning framework.",
+  "codeRepository": "https://github.com/jorge-martinez-gil/ci-component",
+  "url": "https://github.com/jorge-martinez-gil/ci-component",
+  "programmingLanguage": ["HTML", "JavaScript", "CSS"],
+  "runtimePlatform": "Web Browser",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "1.0.0",
+  "datePublished": "2025-10-20",
+  "keywords": [
+    "Edge AI",
+    "Industry 5.0",
+    "Human-AI Collaboration",
+    "Human-in-the-Loop",
+    "Agentic Frameworks",
+    "Collaborative Intelligence",
+    "Large Language Models",
+    "Explainable AI",
+    "MQTT",
+    "Smart Manufacturing"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Jorge",
+      "familyName": "Martinez-Gil",
+      "email": "jorge.martinez-gil@scch.at",
+      "@id": "https://orcid.org/0000-0002-5730-7965",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Software Competence Center Hagenberg (SCCH)"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Mario",
+      "familyName": "Pichler",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Software Competence Center Hagenberg (SCCH)"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Nefeli",
+      "familyName": "Bountouni",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Suite5 Data Intelligence Solutions"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Sotiris",
+      "familyName": "Koussouris",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Suite5 Data Intelligence Solutions"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Marielena Márquez",
+      "familyName": "Barreiro",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Gradiant"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Sergio",
+      "familyName": "Gusmeroli",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Politecnico di Milano"
+      }
+    }
+  ],
+  "referencePublication": {
+    "@type": "ScholarlyArticle",
+    "name": "An Agentic Framework for Rapid Deployment of Edge AI Solutions in Industry 5.0",
+    "identifier": "https://doi.org/10.1007/978-3-032-05681-8_4",
+    "@id": "https://doi.org/10.1007/978-3-032-05681-8_4",
+    "sameAs": "https://arxiv.org/abs/2510.25813",
+    "datePublished": "2026",
+    "isPartOf": "Hybrid Human-AI Collaborative Networks (PRO-VE 2025), IFIP AICT vol 771, Springer, Cham",
+    "pagination": "55-68"
+  },
+  "funding": "European Union Horizon Europe research and innovation programme, grant agreement No 101092069 (AI REDGIO 5.0)",
+  "funder": {
+    "@type": "Organization",
+    "name": "European Commission (Horizon Europe)"
+  }
+}

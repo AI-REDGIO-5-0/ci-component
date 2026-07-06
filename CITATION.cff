@@ -1,0 +1,109 @@
+# This CITATION.cff file makes the repository citable and powers GitHub's
+# "Cite this repository" button. See https://citation-file-format.github.io
+#
+# NOTE: After archiving a release on Zenodo (see README > Archived Software DOI),
+# uncomment the `doi:` line below and fill in the Zenodo DOI so the software
+# itself becomes independently citable.
+
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the software (this repository)
+  and the peer-reviewed paper listed under `preferred-citation`.
+title: "Collaborative Intelligence Component (CI-Component)"
+abstract: >-
+  A lightweight, web-based implementation of an agentic framework for Industry 5.0.
+  The Collaborative Intelligence Component enables Human-in-the-Loop (HITL) decision
+  making at the Edge, integrating Large Language Models (LLMs) for explainable data
+  curation and one-click recalibration of Edge AI models over MQTT telemetry.
+  Official implementation of the PRO-VE 2025 Best Paper Award-winning framework.
+type: software
+authors:
+  - family-names: Martinez-Gil
+    given-names: Jorge
+    orcid: "https://orcid.org/0000-0002-5730-7965"
+    email: jorge.martinez-gil@scch.at
+    affiliation: "Software Competence Center Hagenberg (SCCH), Hagenberg, Austria"
+  - family-names: Pichler
+    given-names: Mario
+    affiliation: "Software Competence Center Hagenberg (SCCH), Hagenberg, Austria"
+  - family-names: Bountouni
+    given-names: Nefeli
+    affiliation: "Suite5 Data Intelligence Solutions, Gerakas, Greece"
+  - family-names: Koussouris
+    given-names: Sotiris
+    affiliation: "Suite5 Data Intelligence Solutions, Limassol, Cyprus"
+  - family-names: Barreiro
+    given-names: "Marielena Márquez"
+    affiliation: "Gradiant, Vigo, Spain"
+  - family-names: Gusmeroli
+    given-names: Sergio
+    affiliation: "Department of Mechanical Engineering, Politecnico di Milano, Milan, Italy"
+repository-code: "https://github.com/jorge-martinez-gil/ci-component"
+url: "https://github.com/jorge-martinez-gil/ci-component"
+license: MIT
+version: "1.0.0"
+date-released: "2025-10-20"
+# doi: "10.5281/zenodo.XXXXXXX"   # <-- add your Zenodo concept DOI after first release
+keywords:
+  - "Edge AI"
+  - "Industry 5.0"
+  - "Human-AI Collaboration"
+  - "Human-in-the-Loop"
+  - "Agentic Frameworks"
+  - "Collaborative Intelligence"
+  - "Large Language Models"
+  - "Explainable AI"
+  - "MQTT"
+  - "Smart Manufacturing"
+preferred-citation:
+  type: conference-paper
+  title: "An Agentic Framework for Rapid Deployment of Edge AI Solutions in Industry 5.0"
+  authors:
+    - family-names: Martinez-Gil
+      given-names: Jorge
+      orcid: "https://orcid.org/0000-0002-5730-7965"
+      affiliation: "Software Competence Center Hagenberg (SCCH), Hagenberg, Austria"
+    - family-names: Pichler
+      given-names: Mario
+      affiliation: "Software Competence Center Hagenberg (SCCH), Hagenberg, Austria"
+    - family-names: Bountouni
+      given-names: Nefeli
+      affiliation: "Suite5 Data Intelligence Solutions, Gerakas, Greece"
+    - family-names: Koussouris
+      given-names: Sotiris
+      affiliation: "Suite5 Data Intelligence Solutions, Limassol, Cyprus"
+    - family-names: Barreiro
+      given-names: "Marielena Márquez"
+      affiliation: "Gradiant, Vigo, Spain"
+    - family-names: Gusmeroli
+      given-names: Sergio
+      affiliation: "Department of Mechanical Engineering, Politecnico di Milano, Milan, Italy"
+  editors:
+    - family-names: Camarinha-Matos
+      given-names: "Luis M."
+    - family-names: Ortiz
+      given-names: Angel
+    - family-names: Boucher
+      given-names: Xavier
+    - family-names: "Lucas Soares"
+      given-names: Antonio
+  collection-title: "Hybrid Human-AI Collaborative Networks (PRO-VE 2025). IFIP Advances in Information and Communication Technology, vol 771"
+  collection-type: proceedings
+  conference:
+    name: "26th IFIP WG 5.5 Working Conference on Virtual Enterprises (PRO-VE 2025)"
+    city: Porto
+    country: PT
+    date-start: "2025-10-27"
+    date-end: "2025-10-29"
+  publisher:
+    name: "Springer"
+    city: Cham
+    country: CH
+  volume: 771
+  year: 2026
+  month: 10
+  start: 55
+  end: 68
+  isbn: "978-3-032-05681-8"
+  doi: "10.1007/978-3-032-05681-8_4"
+  url: "https://doi.org/10.1007/978-3-032-05681-8_4"
