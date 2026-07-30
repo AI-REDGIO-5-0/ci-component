@@ -6,8 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 [![Framework](https://img.shields.io/badge/Framework-Agentic_Edge_AI-orange.svg?style=flat-square)](#-scientific-contribution--capabilities)
 [![Status](https://img.shields.io/badge/Status-Reference_Implementation-teal.svg?style=flat-square)](#-implementation-notes--scope)
-<!-- After you archive a release on Zenodo (see "Archived Software DOI" below), replace the badge line under this comment with your real Zenodo DOI badge. -->
-[![Software DOI](https://img.shields.io/badge/Zenodo-archive_pending-lightgrey.svg?style=flat-square)](#-archived-software-doi-zenodo)
+
 
 > **Official implementation of the Best Paper Award-winning framework at PRO-VE 2025.**
 
