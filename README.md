@@ -59,32 +59,7 @@ If you use this code or framework in your research, **please cite the peer-revie
 }
 ```
 
-**BibTeX (open-access arXiv preprint):**
-
-```bibtex
-@article{martinezgil2025agentic_arxiv,
-  author  = {Martinez-Gil, Jorge and Pichler, Mario and Bountouni, Nefeli and
-             Koussouris, Sotiris and Barreiro, Marielena M{\'a}rquez and Gusmeroli, Sergio},
-  title   = {An Agentic Framework for Rapid Deployment of Edge AI Solutions in Industry 5.0},
-  journal = {arXiv preprint arXiv:2510.25813},
-  year    = {2025},
-  url     = {https://arxiv.org/abs/2510.25813}
-}
-```
-
 **Read the paper:** [Springer (published)](https://doi.org/10.1007/978-3-032-05681-8_4) · [arXiv (open access)](https://arxiv.org/abs/2510.25813)
-
-## 💾 Archived Software DOI (Zenodo)
-
-To make the *software itself* independently citable, archive a tagged release on Zenodo:
-
-1. Sign in at [zenodo.org](https://zenodo.org) with GitHub and enable this repository under **Settings → GitHub**.
-2. On GitHub, create a release (e.g. `v1.0.0`). Zenodo automatically archives it and mints a DOI.
-3. Copy the **concept DOI** (the version-independent one) and:
-   - uncomment the `doi:` line in [`CITATION.cff`](CITATION.cff), and
-   - replace the "archive pending" badge at the top of this README with the Zenodo-provided badge.
-
-Once done, users can cite both the paper and a permanent snapshot of the exact code they used.
 
 ## 🎥 Video Demonstration
 
